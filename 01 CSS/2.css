@@ -1,89 +1,91 @@
-/* 
-Flexbox is a CSS layout mode that provides an easy and clean way to arrange 
-items within a container.
-✔ No Floats
-✔ Responsive and mobile friendly
-✔ Positionaing child element is much easier
-✔ Flex containr's margins do not collapse with the margins of its elements.
-✔ Order of the element can be easily chaged without editing the source HTML
-
-Flexible box model concept
-✔ The ability to alter item width and height to best fit in its cintainers available free space.
-✔ Flexbox is direction-agnostic
-✔ Built for smaill-scale layouts while the "Grid" specification is for more large scale.
-
-Flex Properties
-display: flex | inline-flex;
-flex-direction: row | column;
-flex-wrap: wrap | nowrap | wrapreverse;
-flex-basis: <length>;
-justify-content: flex-start | flex-end | center;
-align-self: flex-start | flex-end | center;
-align-items: flex-start | flex-end | center;
-align-content: flex-start | flex-end | center;
-flex-grow: <number>;
-flex-shrink: <number>;
-flex: integer;
-order: <integer>;
-*/
-
-@media(min-width: 600px){
-    .container-1 {
-        display:flex;
-        /*
-        align-items: flex-start;
-        align-items: flex-end;
-        align-items: center;
-        align-items: stretch; (default)
-    
-        flex-direction: column;
-        flex-direction: row;
-        */
-    }
-    
-    .container-2 {
-        display: flex;
-        /*
-        justify-content: flex-start;
-        justify-content: flex-end;
-        justify-content: center;
-        justify-content: space-between;
-        */
-        justify-content: space-around;
-    }
+body {
+    background-color: #f4f4f4;
+    color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
 }
 
-.container-3{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.container {
+    width: 80%;
+    margin:auto;
+    overflow: hidden;
 }
 
-.container-1 div, .container-2 div, .container-3 div {
-    border: 1px #333 solid;
+#main-header {
+    background-color: coral;
+    color:#fff;
+}
+
+#navbar {
+    background-color: #333;
+    color: #fff;
+}
+
+#navbar ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+#navbar li {
+    display: inline;
+}
+
+#navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+#showcase {
+    background-image: url(bg.jpg);
+    background-position: center right;
+    min-height: 300px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#showcase h1 {
+    font-size: 30px;
+    line-height: 1.6em;
+    padding-top: 30px;
+}
+
+#main {
+    float: left;
+    width: 70%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+#sidebar {
+    float: right;
+    width: 30%;
+    background: #333;
+    color: #fff;
     padding: 10px;
+    box-sizing: border-box;
 }
 
-#box-1 {
-    flex: 2;
-    order: 2;
+#main-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
 }
 
-#box-2 {
-    flex: 1;
-    order: 1;
-}
 
-#box-3 {
-    flex: 1;
-    order: 3;    
-}
+@media(max-width:600px) {
+    #main {
+        width:100%;
+        float: none;
+    }
 
-.container-2-box {
-    /* width: 28%; */
-    flex-basis: 28%;
-}
-
-.container-3-box {
-   flex-basis: 150px;
+    #sidebar {
+        width:100%;
+        float: none;
+    }
 }

@@ -1,0 +1,8 @@
+body[data-page='home'] {
+    .hero {
+      height: 100vh;
+      @include flex-center;
+      background-color: #eaf4ff;
+    }
+  }
+  

@@ -1,114 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="0.css">
-
-    <title>CSS CS</title>
+    <title>CSS Cheatsheet</title>
+    <style type="text/css">
+        h1 {
+            color:blue;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <div class="container">
+        <h1 style="color: red">Hello World</h1>
+    
         <div class="box-1">
-            <h1>Hello World</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, incidunt! Reiciendis maiores, aut
-                laudantium asperiores corporis velit repellat porro est. Earum, deleniti omnis dolores possimus
-                temporibus fugit
-                velit at veniam?
-            </p>
+            <h1>Hi World</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod autem modi iure animi rem, facere non dignissimos? Natus officia explicabo laborum, necessitatibus accusantium quam nihil omnis in itaque ea odio exercitationem sit alias mollitia amet expedita voluptatum repellat suscipit fugit doloremque. Ipsam reprehenderit blanditiis iure excepturi at saepe aut amet?</p>
         </div>
 
         <div class="box-2">
-            <h1>Bye World</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, incidunt! Reiciendis maiores, aut
-                laudantium asperiores corporis velit repellat porro est. Earum, deleniti omnis dolores possimus
-                temporibus fugit
-                velit at veniam?
-            </p>
+            <h1>Goodbye World</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod autem modi iure animi rem, facere non dignissimos? Natus officia explicabo laborum, necessitatibus accusantium quam nihil omnis in itaque ea odio exercitationem sit alias mollitia amet expedita voluptatum repellat suscipit fugit doloremque. Ipsam reprehenderit blanditiis iure excepturi at saepe aut amet?</p>
         </div>
 
         <div class="catagories">
             <h2>Catagories</h2>
             <ul>
-                <li><a href="#">Item1</a></li>
-                <li><a href="#">Item1</a></li>
-                <li><a href="#">Item1</a></li>
-                <li><a href="#">Item1</a></li>
-                <li><a href="#">Item1</a></li>
+                <li><a href="">Catagory 1</a></li>
+                <li><a href="">Catagory 2</a></li>
+                <li><a href="">Catagory 3</a></li>
+                <li><a href="">Catagory 4</a></li>
             </ul>
         </div>
 
-        <form class="my-form">
+        <form action="" class="my-form">
             <div class="form-group">
-                <label>Name: </label>
-                <input type="text" name="name">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
             </div>
             <div class="form-group">
-                <label>Email: </label>
-                <input type="text" name="email">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
             </div>
             <div class="form-group">
-                <label>Message: </label>
-                <textarea name="message"></textarea>
+                <label for="message">Message</label>
+                <textarea name="message" id="message"></textarea>
             </div>
-            <input type="submit" class="button" value="submit" name="submit">
+            <input type="submit" value="submit" class="button" name="submit">
         </form>
 
-        <div class="block">
-            <h3>Heading</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
 
         <div class="block">
             <h3>Heading</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, numquam. Dolorum fugit consequatur debitis repudiandae veniam quibusdam aliquid minima odio.</p>
         </div>
-
         <div class="block">
             <h3>Heading</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, numquam. Dolorum fugit consequatur debitis repudiandae veniam quibusdam aliquid minima odio.</p>
+        </div>
+        <div class="block">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, numquam. Dolorum fugit consequatur debitis repudiandae veniam quibusdam aliquid minima odio.</p>
         </div>
 
-        <div class="clr"></div>
+        <div class="clr"></div> <!-- must clear the float -->
 
         <div id="main-block">
             <h3>Heading</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, numquam. Dolorum fugit consequatur debitis repudiandae veniam quibusdam aliquid minima odio.</p>
         </div>
-
-        <div id="side-bar">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div id="sidebar">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, numquam. Dolorum fugit consequatur debitis repudiandae veniam quibusdam aliquid minima odio.</p>
         </div>
 
         <div class="clr"></div>
 
         <div class="p-box">
             <h1>Hello</h1>
-            <h2>GoodBye</h2>
+            <h2>Goodbye</h2>
         </div>
 
         <ul class="my-list">
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item</li> 
+            <li>list item</li>
+            <li>list item</li>
+            <li>list item</li>
+            <li>list item</li>
+            <li>list item</li>
+            <li>list item</li>
+            <li>list item</li>
         </ul>
-
-        <a href="#" class="fix-me button">Fixed</a>
     </div>
-</body>
 
+    <a href="#" class="fix-me button">Hello</a>
+</body>
 </html>

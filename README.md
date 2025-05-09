@@ -1,3 +1,2 @@
-![poster](poster.png)
-# webDev-cheatSheet
-📢 A repository containing HTML, CSS, Bootstrap, Sass and JS files for personal use.
+# Webdev 
+📢 A repository containing HTML, CSS, SASS, JS, REACT, NEXT, and DJANGO files for crash course.

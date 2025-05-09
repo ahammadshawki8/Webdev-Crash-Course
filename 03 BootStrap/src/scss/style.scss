@@ -1,8 +1,0 @@
-// Required Bootstrap SCSS files (@import must)
-@import "../../node_modules/bootstrap/scss/bootstrap";
-
-// My Custom SCSS files (@import)
-// Ideal is to use @use but @use can't be used after @import, 
-// if we use @use before @import Bootstrap default vars will override,
-// so use @import
-@import "components";

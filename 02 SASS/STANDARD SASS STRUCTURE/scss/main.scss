@@ -1,0 +1,26 @@
+@use 'config/functions';
+@use 'config/mixins';
+@use 'config/variables';
+
+@use 'global/reset';
+@use 'global/typography';
+@use 'global/others';
+
+@use 'layout/header';
+@use 'layout/footer';
+@use 'layout/sidebar';
+
+@use 'components/button';
+@use 'components/card';
+
+@use 'pages/home' with (
+  $page: 'home'
+);
+@use 'pages/about' with (
+  $page: 'about'
+);
+
+@use 'responsive/mobile';
+@use 'responsive/tablet';
+
+@use 'third-party/tailwind';
