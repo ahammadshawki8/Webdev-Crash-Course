@@ -1,0 +1,34 @@
+// load your custom config files
+@use 'config/functions';
+@use 'config/mixins';
+@use 'config/variables';
+
+// load Bootstrap SCSS
+@use "../node_modules/bootstrap/scss/bootstrap";
+
+
+// Load your global styles
+@use 'global/reset';
+@use 'global/typography';
+@use 'global/others';
+
+// Load layout styles
+@use 'layout/header';
+@use 'layout/footer';
+@use 'layout/sidebar';
+
+// Load component styles
+@use 'components/button';
+@use 'components/card';
+
+// Load page-specific styles
+// @use 'pages/home' with (
+//   $page: 'home'
+// );
+// @use 'pages/about' with (
+//   $page: 'about'
+// );
+
+// Load responsive styles
+@use 'responsive/mobile';
+@use 'responsive/tablet';
