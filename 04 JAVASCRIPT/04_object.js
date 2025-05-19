@@ -29,3 +29,26 @@ var objArr = {
 console.log(objArr.name[1]);
 console.log(objArr.age[1]);
 console.log(objArr.name.length);
+
+var {name, age} = ahammad;
+console.log(name);
+console.log(age);
+
+var {name: myName, age: myAge} = ahammad;
+console.log(myName);
+console.log(myAge);
+
+var comObj = {
+    anotherObj : {
+        anotherNewObj: {
+            title: "Hello",
+            description: "World",
+        },
+        key: "value",
+    }
+}
+
+var {anotherObj: {anotherNewObj: {title, description}, key}} = comObj;
+console.log(title);
+console.log(description);
+console.log(key);
