@@ -1,0 +1,18 @@
+console.assert(1==1, "Error");
+console.log("This is a log message");
+console.warn("This is a warning message");
+console.error("This is an error message");
+console.info("This is an info message");
+console.debug("This is a debug message");
+console.table([{name: "John", age: 30}, {name: "Jane", age: 25}]);
+console.time("Timer");
+console.timeEnd("Timer");
+console.trace("This is a trace message");
+console.group("Group 1");
+console.log("This is a message in Group 1");
+console.group("Group 2");
+console.log("This is a message in Group 2");
+console.groupEnd();
+console.groupEnd();
+console.log("This is a message after Group 1");
+// console.clear();

@@ -40,3 +40,17 @@ var newArr4 = anotherArr.map(function() {
     console.log(this === obj);
     console.log(this === global);
 }, obj);
+
+
+// some method
+var numArr = [1, 2, 3, 4, 5];
+console.log(numArr.some(item => item % 2 == 0));
+
+console.log(numArr.some(item => {
+    console.log(item);
+    return item % 2 == 0;
+}));
+
+
+// every method
+console.log(numArr.every(item => item > 0));

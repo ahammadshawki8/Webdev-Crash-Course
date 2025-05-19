@@ -17,6 +17,8 @@ console.log(message);
 var message2 = `Name: ${person}, Age: ${age}, Salary: ${salary}, Is Student: ${isStudent}, Something: ${something}`;
 console.log(message2);
 
+console.log("Name: %s, Age: %s, Salary: %s, Is Student: %s, Something: %s", person, age, salary, isStudent, something);
+
 // Typeof operator
 console.log(typeof(person));
 console.log(typeof(age));

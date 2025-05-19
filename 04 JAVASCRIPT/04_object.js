@@ -15,8 +15,14 @@ var ahammad = {
 }
 
 console.log(shawki);
+console.log(shawki.name);
+console.log(shawki["name"]);
 console.log(ahammad);
 ahammad.introduce();
+
+console.log(Object.keys(ahammad));
+console.log(Object.values(ahammad));
+console.log(Object.entries(ahammad));
 
 for (var key in ahammad) {
     console.log(key + ": " + ahammad[key]);
