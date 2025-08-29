@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Rooms</title>
+</head>
+<body>
+    <h1>Cool Rooms</h1>
+    <div class="rooms-container">
+        <!-- Rooms will be dynamically inserted here -->
+    </div>
+</body>
+
+<script>
+    let roomsContainer = document.querySelector('.rooms-container');
+
+    let getRooms = async () => {
+        let response = await fetch('http://127.0.0.1:8000/api/rooms/')
+        let data = await response.json()
+        
+        for (let i = 0; i < data.length; i++) {
+            let room = data[i];
+            let roomDiv = document.createElement('div');
+            roomDiv.classList.add('room');
+            roomDiv.innerHTML = `
+                <h2>${room.name}</h2>
+                <p>${room.description}</p>
+                <p>Topic: ${room.topic}</p>
+                <p>Host: ${room.host}</p>
+            `;
+            roomsContainer.appendChild(roomDiv);
+        }
+    }
+    getRooms();
+</script>
+</html>
